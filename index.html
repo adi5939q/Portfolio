@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adithya | E-Portfolio</title>
+  <meta name="description" content="Personal e-portfolio of Adithya, student at REVA University. Discover my skills, projects, and connect with me.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Adithya<span>.</span></a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Available for Internships</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Adithya</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I'm a <span id="typing-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Passionate tech student building modern, scalable, and visually stunning digital experiences. Currently pursuing my studies and preparing to make an impact in the tech world.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects <i data-lucide="arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/adithya-b54401384" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:adi5939q@gmail.com" class="social-icon" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <img src="avatar.png" alt="Adithya Profile Avatar" class="profile-avatar">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll to About">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tagline">My Background</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info">
+            <h3>Building the future, one line of code at a time.</h3>
+            <p>
+              I am a dedicated student with a keen interest in software development, web engineering, and problem-solving. My journey in technology focuses on mastering clean code practices and designing highly responsive user interfaces.
+            </p>
+            <p>
+              I thrive in collaborative environments and enjoy taking on challenges that expand my technical skill set. I aim to create technology that is not only functional but also visually compelling and delightful to use.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="graduation-cap"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>REVA University (Class of 2025)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-cards">
+            <div class="info-card">
+              <div class="card-icon"><i data-lucide="book-open"></i></div>
+              <h3>Continuous Learning</h3>
+              <p>Actively acquiring knowledge in modern frameworks, design systems, and software architectures.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon"><i data-lucide="code-2"></i></div>
+              <h3>Clean Code</h3>
+              <p>Striving for readable, maintainable, and efficient solutions using industry-standard design patterns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tagline">My Toolkit</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <i data-lucide="layout"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">HTML5</div>
+              <div class="skill-tag">CSS3 / SASS</div>
+              <div class="skill-tag">JavaScript (ES6+)</div>
+              <div class="skill-tag">Responsive Design</div>
+              <div class="skill-tag">UI/UX Design</div>
+              <div class="skill-tag">CSS Grid & Flexbox</div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <i data-lucide="server"></i>
+              <h3>Backend & Database</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">Node.js</div>
+              <div class="skill-tag">RESTful APIs</div>
+              <div class="skill-tag">SQL Databases</div>
+              <div class="skill-tag">JSON / Data Structuring</div>
+              <div class="skill-tag">Express.js</div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <i data-lucide="wrench"></i>
+              <h3>Tools & Concepts</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">Git & GitHub</div>
+              <div class="skill-tag">VS Code</div>
+              <div class="skill-tag">Command Line / Terminal</div>
+              <div class="skill-tag">Agile Development</div>
+              <div class="skill-tag">Object Oriented Programming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tagline">Recent Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-image-placeholder gradient-1">
+                <i data-lucide="users"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-card-title">DevConnect Portal</h3>
+              <p class="project-card-desc">
+                A social platform design tailored for REVA University students to collaborate on developer projects and share ideas.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub Repository"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Live Demo"><i data-lucide="external-link"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-image-placeholder gradient-2">
+                <i data-lucide="check-square"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Vanilla JS</span>
+              </div>
+              <h3 class="project-card-title">Smart Study Space</h3>
+              <p class="project-card-desc">
+                A student productivity dashboard application that allows tracking tasks, schedules, and semester marks.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub Repository"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Live Demo"><i data-lucide="external-link"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-image-placeholder gradient-3">
+                <i data-lucide="globe"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Animations</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <h3 class="project-card-title">Responsive E-Portfolio</h3>
+              <p class="project-card-desc">
+                This exact modern interactive digital resume designed to impress recruiters on LinkedIn. Highly optimized.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub Repository"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Live Demo"><i data-lucide="external-link"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tagline">Get In Touch</span>
+          <h2 class="section-title">Connect With Me</h2>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Let's start a conversation.</h3>
+            <p>Whether you're looking for a motivated intern, want to collaborate on a project, or just want to say hi, feel free to drop me a message.</p>
+            
+            <div class="contact-methods">
+              <a href="mailto:adi5939q@gmail.com" class="contact-method-item">
+                <div class="method-icon"><i data-lucide="mail"></i></div>
+                <div class="method-details">
+                  <span>Email</span>
+                  <strong>adi5939q@gmail.com</strong>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/adithya-b54401384" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                <div class="method-icon"><i data-lucide="linkedin"></i></div>
+                <div class="method-details">
+                  <span>LinkedIn</span>
+                  <strong>adithya-b54401384</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Inquiry about Internship">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Hi Adithya, I'd like to discuss..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i data-lucide="send"></i>
+              </button>
+              <div id="form-feedback" class="form-feedback hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Adithya. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/adithya-b54401384" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:adi5939q@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
